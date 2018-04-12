@@ -22,7 +22,7 @@
             $fichier = 'upload/' . $_POST['vignette'];
 
             if( file_exists ( $fichier)) {
-                @unlink( $fichier );
+                unlink( $fichier );
             }
         }
 
